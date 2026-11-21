@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-continuous {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 24s linear infinite;
+}
+
+.animate-marquee-continuous:hover {
+  animation-play-state: paused;
+}
+
+/* Original site bottom-border-only popup inputs (.accordinflu) */
+.accordinflu input,
+.accordinflu select,
+.accordinflu textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  background: transparent;
+  font-size: 15px;
+  color: #111;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.accordinflu input:focus,
+.accordinflu select:focus,
+.accordinflu textarea:focus {
+  border-bottom: 1px solid #007bff;
+}
+
+.accordinflu input::placeholder,
+.accordinflu textarea::placeholder {
+  color: #000;
+  opacity: 0.75;
+}
