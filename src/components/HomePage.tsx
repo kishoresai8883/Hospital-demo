@@ -19,7 +19,7 @@ import {
   GOOGLE_REVIEWS,
   HEALTH_INSIGHTS,
 } from '../data/hospitalData';
-import { HospitalImage } from './HospitalImage';
+import { HospitalImage, getAssetUrl } from './HospitalImage';
 import { Logo } from './Logo';
 
 interface HomePageProps {
@@ -113,7 +113,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section
         className="relative w-full py-[92px] lg:py-[123px] px-[5%] bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/images/hero-new-bg.jpg)',
+          backgroundImage: `url(${getAssetUrl('/images/hero-new-bg.jpg')})`,
           backgroundPosition: 'center right',
         }}
       >
@@ -489,7 +489,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       ================================================================= */}
       <section
         className="relative w-full py-[80px] px-[5%] bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/journey-bg.webp)' }}
+        style={{ backgroundImage: `url(${getAssetUrl('/images/journey-bg.webp')})` }}
       >
         {/* .tb_dw14935>.builder_row_cover::before */}
         <div
@@ -871,7 +871,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           {/* Right Column: Opening & Closing Hours Card (.tb_5ybd821) */}
           <div
             className="lg:col-span-6 relative rounded-[12px] p-[32px] bg-cover bg-center flex flex-col justify-between min-h-[460px] overflow-hidden"
-            style={{ backgroundImage: 'url(/images/hours-bg.jpg)' }}
+            style={{ backgroundImage: `url(${getAssetUrl('/images/hours-bg.jpg')})` }}
           >
             {/* .tb_5ybd821>.builder_row_cover::before */}
             <div

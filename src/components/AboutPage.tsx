@@ -5,7 +5,7 @@ import {
   EscalatorWarning as EscalatorWarningIcon,
 } from '@mui/icons-material';
 import { EXPERT_DOCTORS } from '../data/hospitalData';
-import { HospitalImage } from './HospitalImage';
+import { HospitalImage, getAssetUrl } from './HospitalImage';
 
 interface AboutPageProps {
   onNavigate: (slug: string) => void;
@@ -21,7 +21,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
       {/* Breadcrumb Hero Banner */}
       <section
         className="relative w-full py-24 px-[5%] bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/about-hero-bg.jpg)' }}
+        style={{ backgroundImage: `url(${getAssetUrl('/images/about-hero-bg.jpg')})` }}
       >
         <div
           className="absolute inset-0"

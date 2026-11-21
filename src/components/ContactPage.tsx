@@ -18,6 +18,7 @@ import {
   Share as ShareIcon,
   CalendarMonth as CalendarMonthIcon,
 } from '@mui/icons-material';
+import { getAssetUrl } from './HospitalImage';
 
 interface ContactPageProps {
   onNavigate: (slug: string) => void;
@@ -105,7 +106,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       ================================================================= */}
       <section
         className="relative w-full py-20 lg:py-24 px-[5%] bg-cover bg-center text-white"
-        style={{ backgroundImage: 'url(/images/contact-hero-bg.jpg)' }}
+        style={{ backgroundImage: `url(${getAssetUrl('/images/contact-hero-bg.jpg')})` }}
       >
         <div
           className="absolute inset-0"

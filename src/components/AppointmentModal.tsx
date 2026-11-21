@@ -4,6 +4,7 @@ import {
   Close as CloseIcon,
   CheckCircle as CheckCircleOutlineIcon,
 } from '@mui/icons-material';
+import { getAssetUrl } from './HospitalImage';
 
 interface AppointmentModalProps {
   open: boolean;
@@ -86,7 +87,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
           {/* Left Column: .tb_focp404 background image */}
           <div
             className="hidden sm:block sm:col-span-5 rounded-lg bg-cover bg-center min-h-[380px]"
-            style={{ backgroundImage: 'url(/images/popup-bg.webp)' }}
+            style={{ backgroundImage: `url(${getAssetUrl('/images/popup-bg.webp')})` }}
           />
 
           {/* Right Column: .accordinflu form */}

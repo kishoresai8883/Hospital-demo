@@ -4,7 +4,7 @@ import {
   KeyboardDoubleArrowRight as KeyboardDoubleArrowRightIcon,
 } from '@mui/icons-material';
 import { MAIN_MENU, getServiceDetailBySlug } from '../data/hospitalData';
-import { HospitalImage } from './HospitalImage';
+import { HospitalImage, getAssetUrl } from './HospitalImage';
 
 interface ServiceDetailPageProps {
   slug: string;
@@ -40,7 +40,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       {/* Service Hero Banner */}
       <section
         className="relative w-full py-20 px-[5%] bg-cover bg-center"
-        style={{ backgroundImage: `url(${detail.heroImage})` }}
+        style={{ backgroundImage: `url(${getAssetUrl(detail.heroImage)})` }}
       >
         <div
           className="absolute inset-0"
@@ -108,7 +108,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {/* Request Appointment CTA Card */}
             <div
               className="relative rounded-[12px] overflow-hidden p-7 text-white bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/hours-bg.jpg)' }}
+              style={{ backgroundImage: `url(${getAssetUrl('/images/hours-bg.jpg')})` }}
             >
               <div className="absolute inset-0 bg-black/70" />
               <div className="relative z-10 space-y-4">
