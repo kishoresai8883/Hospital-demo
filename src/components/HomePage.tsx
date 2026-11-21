@@ -135,7 +135,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <p className="font-opensans font-normal text-white text-[16px] leading-relaxed max-w-2xl m-0">
               Delivering expert medical care with compassion — from maternity and gynaecology to advanced surgeries and child healthcare, all under one roof.
             </p>
-            <div className="pt-1">
+            <div className="pt-4">
               <button
                 type="button"
                 onClick={onOpenAppointmentModal}

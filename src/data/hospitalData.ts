@@ -174,12 +174,12 @@ export const CARE_JOURNEY_STEPS = [
 ];
 
 export const GALLERY_IMAGES = [
-  { src: '/images/gallery-6.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 1' },
-  { src: '/images/gallery-5.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 2' },
-  { src: '/images/gallery-4.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 3' },
-  { src: '/images/gallery-3.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 4' },
-  { src: '/images/gallery-2.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 5' },
-  { src: '/images/gallery-1.webp', alt: 'Celebrating New Beginnings at Dhanvvantrri Hospital 6' },
+  { src: '/images/gallery-new-1.jpg', alt: 'Modern Hospital Infrastructure and Reception Lounge' },
+  { src: '/images/gallery-new-2.jpg', alt: 'Doctor Patient Consultation and Specialized Care' },
+  { src: '/images/gallery-new-3.jpg', alt: 'Advanced Medical Diagnostics and Ultrasound Suite' },
+  { src: '/images/gallery-new-4.jpg', alt: 'Comfortable In-Patient Recovery Ward and Patient Room' },
+  { src: '/images/gallery-new-5.jpg', alt: 'Minimally Invasive Surgery and Advanced Operation Theatre' },
+  { src: '/images/gallery-new-6.jpg', alt: 'Collaborative Clinical Team and Patient Care Round' },
 ];
 
 export const GOOGLE_REVIEWS = [
