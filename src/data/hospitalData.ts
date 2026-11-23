@@ -30,27 +30,12 @@ export const MAIN_MENU: NavItem[] = [
     slug: 'about-us',
   },
   {
-    label: 'Obstetrics',
-    children: [
-      { label: 'Preconception to Antenatal checkup', slug: 'best-obstetrician-and-antenatal-care-in-hyderabad' },
-      { label: 'Normal Vaginal delivery', slug: 'best-hospital-for-normal-delivery-in-hyderabad' },
-      { label: 'Caesarean section', slug: 'best-hospital-for-c-section-delivery-in-hyderabad' },
-      { label: 'High risk pregnancy', slug: 'best-hospital-for-high-risk-pregnancy-in-hyderabad' },
-      { label: 'Structured maternal and fetal monitoring', slug: 'best-maternal-fetal-medicine-doctors-in-hyderabad' },
-      { label: 'Ectopic pregnancy', slug: 'best-hopsital-for-ectopic-pregnancy-reatment-in-hyderabad' },
-    ],
-  },
-  {
     label: 'Gynaecology',
     children: [
       { label: 'Evaluation and Management of Vaginal discharges', slug: 'best-doctors-for-vaginal-discharge-treatment-in-hyderabad' },
       { label: 'Menstrual irregularities', slug: 'best-doctor-for-irregular-periods-treatment-in-hyderabad' },
       { label: 'PCOD', slug: 'best-hospital-for-pcod-treatment-in-hyderabad' },
-      { label: 'Menopause', slug: 'best-clinic-for-menopause-treatment-in-hyderabad' },
-      { label: 'Contraceptive counselling', slug: 'contraceptive-counselling-in-hyderabad' },
       { label: 'Family Planning', slug: 'family-planning-center-in-hyderabad' },
-      { label: 'Adenomyosis and Endometriosis', slug: 'adenomyosis-and-endometriosis-treatment-in-hyderabad' },
-      { label: 'MTP( Medical termination of pregnancy)', slug: 'safe-mtp-abortion-hospital-in-hyderabad' },
     ],
   },
   {
@@ -63,9 +48,6 @@ export const MAIN_MENU: NavItem[] = [
         children: [
           { label: 'Diagnostic Hysteroscopy', slug: 'best-treatment-for-diagnostic-hysteroscopy-in-hyderabad' },
           { label: 'Hysteroscopic Polypectomy', slug: 'best-hysteroscopy-polypectomy-hospital-in-hyderabad' },
-          { label: 'Hysteroscopic septal resection', slug: 'hysteroscopic-septal-resection-in-hyderabad' },
-          { label: 'Hysteroscopic Endometrial biopsy', slug: 'best-hysteroscopic-endometrial-biopsy-treatment-in-hyderabad' },
-          { label: 'Hysteroscopic Myomectomy', slug: 'best-hysteroscopic-myomectomy-hospital-in-hyderabad' },
         ],
       },
       {
@@ -74,9 +56,6 @@ export const MAIN_MENU: NavItem[] = [
         children: [
           { label: 'Diagnostic Laparoscopy', slug: 'best-diagnostic-laparoscopy-hospitals-in-hyderabad' },
           { label: 'Laparoscopic Hysterectomy', slug: 'best-laparoscopic-hysterectomy-hospital-in-hyderabad' },
-          { label: 'Laparoscopic Ovarian Cystectomy', slug: 'best-laparoscopic-ovarian-cystectomy-hospital-in-hyderabad' },
-          { label: 'Laparoscopic Ectopic pregnancy resection', slug: 'best-laparoscopic-ectopic-pregnancy-resection-hospital-in-hyderabad' },
-          { label: 'Laparoscopic tubectomy', slug: 'best-hospital-for-laparoscopic-tubectomy-in-hyderabad' },
         ],
       },
     ],
@@ -85,7 +64,6 @@ export const MAIN_MENU: NavItem[] = [
     label: 'Infertility',
     children: [
       { label: 'Infertility Evaluation', slug: 'best-infertility-evaluation-treatment-in-hyderabad' },
-      { label: 'Follicular Monitoring study', slug: 'best-follicular-scan-doctors-in-hyderabad' },
       { label: 'IUI', slug: 'best-iui-clinic-in-hyderabad' },
       { label: 'IVF', slug: 'ivf-fertility-center-in-hyderabad' },
       { label: 'Reproductive planning and management', slug: 'advanced-reproductive-center-in-hyderabad' },
@@ -455,7 +433,7 @@ export function getServiceDetailBySlug(slug: string): ServiceDetailContent {
     sections: [
       {
         heading: `Overview of ${foundLabel}`,
-        description: `At Dhanvvantrri Hospital, our ${foundCategory} department specializes in ${foundLabel.toLowerCase()} using modern diagnostic protocols and patient-centered clinical care. Every treatment plan is tailored to ensure safety, comfort, and faster recovery.`,
+        description: `At XYZ Hospital, our ${foundCategory} department specializes in ${foundLabel.toLowerCase()} using modern diagnostic protocols and patient-centered clinical care. Every treatment plan is tailored to ensure safety, comfort, and faster recovery.`,
         bullets: [
           { title: 'Expert Clinical Evaluation', text: 'Detailed consultation and history assessment by senior specialists' },
           { title: 'Precision Diagnostics', text: 'High-accuracy ultrasound, laboratory, and endoscopic evaluation under one roof' },
@@ -464,9 +442,9 @@ export function getServiceDetailBySlug(slug: string): ServiceDetailContent {
         ],
       },
       {
-        heading: 'Why Choose Dhanvvantrri Hospital for Your Treatment?',
+        heading: 'Why Choose XYZ Hospital for Your Treatment?',
         description:
-          'Led by Dr. Rupashri and our multidisciplinary team of experienced doctors, we combine 15+ years of clinical excellence with transparent, ethical, and compassionate family healthcare.',
+          'Led by Dr. Devi and our multidisciplinary team of experienced doctors, we combine 15+ years of clinical excellence with transparent, ethical, and compassionate family healthcare.',
         bullets: [
           { title: 'Experienced Specialists', text: 'Senior obstetricians, gynaecologists, laparoscopic surgeons, and paediatricians' },
           { title: 'Modern Modular Facilities', text: 'Equipped with advanced laparoscopy, hysteroscopy, NICU phototherapy, and labour suites' },

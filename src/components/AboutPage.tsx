@@ -6,6 +6,34 @@ import {
 } from '@mui/icons-material';
 import { EXPERT_DOCTORS } from '../data/hospitalData';
 import { HospitalImage, getAssetUrl } from './HospitalImage';
+import { FaqSection, FaqItem } from './FaqSection';
+
+const ABOUT_PAGE_FAQS: FaqItem[] = [
+  {
+    q: 'What is Demo Logo Hospital’s healthcare philosophy and mission?',
+    a: 'We are committed to delivering compassionate, evidence-based, and patient-centered healthcare. Our mission is to combine 15+ years of clinical excellence with personalized warmth, ensuring safe treatments and positive outcomes for women, children, and entire families.',
+  },
+  {
+    q: 'What are the qualifications and clinical experience of your medical specialists?',
+    a: 'Our senior doctors, obstetricians, gynaecologists, and surgeons hold postgraduate and fellowship qualifications (MS, MD, MDS, BPT, OMICP) from renowned medical institutions, bringing over 15+ years of specialized expertise in high-risk pregnancies, infertility, laparoscopic procedures, and pediatric care.',
+  },
+  {
+    q: 'What advanced surgical and diagnostic technology is available on campus?',
+    a: 'We are equipped with advanced modular operating theatres, high-definition 3D laparoscopy and hysteroscopy surgical towers, 4D obstetric ultrasound scanners, computerized pathology labs, and specialized neonatal phototherapy incubators.',
+  },
+  {
+    q: 'How does the hospital maintain patient safety and infection control?',
+    a: 'We adhere strictly to NABH clinical quality standards and rigorous hospital infection control protocols, including multi-stage HEPA air filtration in theatres, continuous sterilization, and regular hygiene audits to ensure a safe healing environment.',
+  },
+  {
+    q: 'Do you offer second opinions and remote consultations?',
+    a: 'Yes, we provide specialized second opinion consultations for complex fertility cases, high-risk pregnancies, and planned surgeries. Patients can share their diagnostic reports online or book video consultations before visiting.',
+  },
+  {
+    q: 'What community and health awareness initiatives does the hospital run?',
+    a: 'We conduct free weekly maternal health clinics every Thursday from 10 AM to 12 PM, cervical and breast cancer screening camps, adolescent wellness workshops, and prenatal education sessions for expectant parents.',
+  },
+];
 
 interface AboutPageProps {
   onNavigate: (slug: string) => void;
@@ -230,6 +258,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           </div>
         </div>
       </section>
+
+      {/* =================================================================
+          FREQUENTLY ASKED QUESTIONS (ABOUT HOSPITAL & CLINICAL STANDARDS)
+      ================================================================= */}
+      <FaqSection
+        badge="About Our Practice"
+        title="Frequently Asked Questions"
+        subtitle="Learn more about our hospital's clinical credentials, advanced technology, patient safety, and care philosophy."
+        items={ABOUT_PAGE_FAQS}
+        onOpenAppointmentModal={onOpenAppointmentModal}
+      />
     </div>
   );
 };

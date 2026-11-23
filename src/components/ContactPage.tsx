@@ -134,11 +134,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-[#97e078]/25 border border-[#97e078]/50 text-[#97e078] px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-3">
-              <span className="w-2 h-2 rounded-full bg-[#97e078] animate-pulse" />
-              24/7 Emergency &amp; Patient Support
-            </div>
-
             <h1 className="font-inter font-bold text-[36px] sm:text-[46px] lg:text-[54px] leading-tight text-white m-0">
               We are Here for You and Your Family
             </h1>
@@ -528,44 +523,40 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <button
                     type="button"
                     onClick={() => setActiveTransportTab('car')}
-                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${
-                      activeTransportTab === 'car'
-                        ? 'bg-[#4bc3c3] text-white shadow-xs'
-                        : 'text-neutral-700 hover:text-black'
-                    }`}
+                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${activeTransportTab === 'car'
+                      ? 'bg-[#4bc3c3] text-white shadow-xs'
+                      : 'text-neutral-700 hover:text-black'
+                      }`}
                   >
                     By Car / Cab
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveTransportTab('metro')}
-                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${
-                      activeTransportTab === 'metro'
-                        ? 'bg-[#4bc3c3] text-white shadow-xs'
-                        : 'text-neutral-700 hover:text-black'
-                    }`}
+                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${activeTransportTab === 'metro'
+                      ? 'bg-[#4bc3c3] text-white shadow-xs'
+                      : 'text-neutral-700 hover:text-black'
+                      }`}
                   >
                     By Metro
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveTransportTab('bus')}
-                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${
-                      activeTransportTab === 'bus'
-                        ? 'bg-[#4bc3c3] text-white shadow-xs'
-                        : 'text-neutral-700 hover:text-black'
-                    }`}
+                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${activeTransportTab === 'bus'
+                      ? 'bg-[#4bc3c3] text-white shadow-xs'
+                      : 'text-neutral-700 hover:text-black'
+                      }`}
                   >
                     By Bus
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveTransportTab('access')}
-                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${
-                      activeTransportTab === 'access'
-                        ? 'bg-[#4bc3c3] text-white shadow-xs'
-                        : 'text-neutral-700 hover:text-black'
-                    }`}
+                    className={`flex-1 py-1.5 text-xs font-poppins font-medium rounded-lg transition-colors cursor-pointer ${activeTransportTab === 'access'
+                      ? 'bg-[#4bc3c3] text-white shadow-xs'
+                      : 'text-neutral-700 hover:text-black'
+                      }`}
                   >
                     Accessibility
                   </button>
@@ -599,97 +590,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* =================================================================
-          4. SPECIALITY DEPARTMENT DIRECTORY & EXTENSIONS
-      ================================================================= */}
-      <section className="py-14 px-[5%] bg-[#f7faf8] border-y border-neutral-200">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-            <div>
-              <span className="text-xs font-semibold text-[#2a8787] uppercase tracking-wider bg-[#e1eddf] px-3 py-1 rounded-full">
-                Quick Phone Directory
-              </span>
-              <h2 className="font-inter font-bold text-[28px] md:text-[34px] text-neutral-900 mt-2 m-0">
-                Department Direct Extensions
-              </h2>
-            </div>
-            <p className="font-opensans text-neutral-600 text-sm max-w-md m-0">
-              Need to reach a specific ward, diagnostic desk, or specialty wing directly? Dial our main PBX number and enter the 3-digit extension.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                dept: 'Maternity, Labor & Delivery Suite',
-                ext: 'Ext. 101',
-                floor: '2nd Floor, Wing A',
-                timing: '24 Hours Open',
-                icon: '👶',
-              },
-              {
-                dept: 'IVF & Fertility Treatment Centre',
-                ext: 'Ext. 104',
-                floor: '3rd Floor, IVF Wing',
-                timing: '9:00 AM – 6:00 PM',
-                icon: '🔬',
-              },
-              {
-                dept: 'Paediatric & Neonatal ICU (NICU)',
-                ext: 'Ext. 202',
-                floor: '2nd Floor, Wing B',
-                timing: '24 Hours Monitored',
-                icon: '🧸',
-              },
-              {
-                dept: 'Diagnostic Ultrasound & Radiology',
-                ext: 'Ext. 108',
-                floor: 'Ground Floor, Diagnostics',
-                timing: '8:00 AM – 9:00 PM',
-                icon: '🩻',
-              },
-              {
-                dept: '24/7 Pharmacy & Medicine Dispensary',
-                ext: 'Ext. 100',
-                floor: 'Ground Floor, Main Lobby',
-                timing: '24 Hours Open',
-                icon: '💊',
-              },
-              {
-                dept: 'Insurance, TPA & Corporate Desk',
-                ext: 'Ext. 110',
-                floor: '1st Floor, Admin Wing',
-                timing: '9:00 AM – 7:00 PM',
-                icon: '📑',
-              },
-            ].map((d) => (
-              <div
-                key={d.dept}
-                className="bg-white rounded-[14px] p-5 border border-neutral-200/90 shadow-xs flex items-start gap-4 hover:border-[#97e078] transition-colors"
-              >
-                <div className="w-12 h-12 rounded-xl bg-[#e1eddf] text-2xl flex items-center justify-center shrink-0">
-                  {d.icon}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="font-mono text-xs font-bold text-[#2a8787] bg-[#e1eddf] px-2 py-0.5 rounded">
-                      {d.ext}
-                    </span>
-                    <span className="text-[11px] text-neutral-500">{d.timing}</span>
-                  </div>
-                  <h4 className="font-inter font-semibold text-[15.5px] text-neutral-900 mt-1 mb-1">
-                    {d.dept}
-                  </h4>
-                  <p className="font-opensans text-xs text-neutral-600 m-0">{d.floor}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* =================================================================
-          5. FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION
+          4. FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION
       ================================================================= */}
       <section className="py-16 px-[5%] bg-white">
         <div className="max-w-[960px] mx-auto">
@@ -722,9 +625,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-full bg-[#e1eddf] text-[#2a8787] flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 bg-[#4bc3c3] text-white' : ''
-                      }`}
+                      className={`w-7 h-7 rounded-full bg-[#e1eddf] text-[#2a8787] flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#4bc3c3] text-white' : ''
+                        }`}
                     >
                       <ExpandMoreIcon sx={{ fontSize: 18 }} />
                     </span>
@@ -742,7 +644,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       </section>
 
       {/* =================================================================
-          6. 24/7 EMERGENCY CALLOUT BANNER
+          5. 24/7 EMERGENCY CALLOUT BANNER
       ================================================================= */}
       <section className="py-12 px-[5%] bg-gradient-to-r from-[#143232] via-[#1a4a4a] to-[#255f5f] text-white">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">

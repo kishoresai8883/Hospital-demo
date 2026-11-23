@@ -310,15 +310,6 @@ export const Header: React.FC<HeaderProps> = ({
               </li>
             );
           })}
-          <li className="pt-2">
-            <button
-              type="button"
-              onClick={() => handleNavClick('contact-us')}
-              className="w-full text-left py-2.5 px-2 font-poppins text-[15px] font-medium text-black hover:bg-[#e1eddf] rounded cursor-pointer"
-            >
-              Contact Us
-            </button>
-          </li>
         </ul>
       </Drawer>
     </header>

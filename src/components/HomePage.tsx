@@ -21,6 +21,7 @@ import {
 } from '../data/hospitalData';
 import { HospitalImage, getAssetUrl } from './HospitalImage';
 import { Logo } from './Logo';
+import { FaqSection } from './FaqSection';
 
 interface HomePageProps {
   onNavigate: (slug: string) => void;
@@ -917,6 +918,11 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
         </div>
       </section>
+
+      {/* =================================================================
+          ROW 17: FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+      ================================================================= */}
+      <FaqSection onOpenAppointmentModal={onOpenAppointmentModal} />
 
       {/* =================================================================
           LIGHTBOX DIALOG FOR CELEBRATING NEW BEGINNINGS GALLERY
