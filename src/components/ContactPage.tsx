@@ -11,7 +11,6 @@ import {
   DirectionsSubway as DirectionsSubwayIcon,
   DirectionsBus as DirectionsBusIcon,
   Accessible as AccessibleIcon,
-  HelpOutline as HelpOutlineIcon,
   ExpandMore as ExpandMoreIcon,
   Call as CallIcon,
   MedicalServices as MedicalServicesIcon,

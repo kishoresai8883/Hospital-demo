@@ -166,21 +166,21 @@ export const GOOGLE_REVIEWS = [
     date: 'Posted on Google',
     rating: 5,
     avatarBg: '#1976d2',
-    text: 'Dr Rupashri mdm explained everything very well and provided good treatment and sajida also explained everything very nicely I have been coming here for many years since 20yrs thank you specially thanks for dr Rupashri mam and sajida',
+    text: 'Dr Devi mdm explained everything very well and provided good treatment and sajida also explained everything very nicely I have been coming here for many years since 20yrs thank you specially thanks for dr Devi mam',
   },
   {
     name: 'Maimuna Maimuna',
     date: 'Posted on Google',
     rating: 5,
     avatarBg: '#7b1fa2',
-    text: 'Satisfied with the doctors nd the staff.. Well behaved management. .. Specially The Dr rupaisiri tq mam',
+    text: 'Satisfied with the doctors nd the staff.. Well behaved management. .. Specially The Dr Devi tq mam',
   },
   {
     name: 'Sudhir Kere',
     date: 'Posted on Google',
     rating: 5,
     avatarBg: '#388e3c',
-    text: 'Very good hospital great service all staff and doctors , Specially rupashri madam',
+    text: 'Very good hospital great service all staff and doctors , Specially Devi madam',
   },
   {
     name: 'APS Hyderabad',
@@ -208,7 +208,7 @@ export const GOOGLE_REVIEWS = [
     date: 'Posted on Google',
     rating: 5,
     avatarBg: '#5d4037',
-    text: 'Excellent medical care and supportive nursing staff. Highly recommended hospital in Attapur.',
+    text: 'Excellent medical care and supportive nursing staff. Highly recommended hospital in hyd.',
   },
   {
     name: 'Anil Singh',

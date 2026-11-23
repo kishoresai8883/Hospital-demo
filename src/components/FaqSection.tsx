@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   ExpandMore as ExpandMoreIcon,
-  HelpOutline as HelpOutlineIcon,
+  HelpOutlineOutlined as HelpOutlineIcon,
   PhoneInTalk as PhoneInTalkIcon,
 } from '@mui/icons-material';
 
