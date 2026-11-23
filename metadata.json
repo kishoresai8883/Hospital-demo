@@ -1,6 +1,8 @@
 {
-  "name": "Dhanvvantrri Hospitals",
-  "description": "Dhanvvantrri Multi Speciality Hospital in Attapur, Hyderabad — delivering expert medical care with compassion across Obstetrics, Gynaecology, Infertility, Paediatrics, Minimally Invasive Surgeries, and Family Medicine.",
+  "name": "XYZ Hospitals",
+  "description": "XYZ Multi Speciality Hospital in Hyderabad — delivering expert medical care with compassion across Obstetrics, Gynaecology, Infertility, Paediatrics, Minimally Invasive Surgeries, and Family Medicine.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
